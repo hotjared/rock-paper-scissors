@@ -46,6 +46,7 @@ function getComputerChoice() {
 
 }
 
+/**This defines which choices beat other choices and returns a winner or a lose */
 function playRound(playerChoice, computerChoice) {
     let result
     if (playerChoice == "rock" && computerChoice == "scissors") {
@@ -71,6 +72,7 @@ function playRound(playerChoice, computerChoice) {
     }
 }
 
+/**This function plays five rounds and decides a winner based off those rounds */
 function game() {
     let playerScore = 0
     let computerScore = 0
@@ -94,5 +96,17 @@ function game() {
     }    
 }
 
-
-game()
+/**Call main function named "game()" */
+game();
+/**Play again or cancel */
+while (true) {
+    let playAgain = prompt("Do you want to play again?").toLowerCase().trim();
+    if (playAgain == "yes") {
+        game()
+    } else if (playAgain == "no") {
+        console.log("Ok, see you later!")
+        break
+    } else {
+        console.log("Please type Yes or No")
+    }
+}
