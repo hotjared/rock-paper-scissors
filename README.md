@@ -1,1 +1,1 @@
-# rock-paper-scissors Currently this just plays rock paper scissors in the console
+# rock-paper-scissors This now plays Rock Paper Scissors in a webpage
